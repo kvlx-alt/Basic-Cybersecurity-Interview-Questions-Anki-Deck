@@ -1,0 +1,141 @@
+Front,Back
+Could you describe information security?,"Information security is how companies protect 
+their systems and information from threats. 
+It can include the processes an organization follows 
+to ensure security, the technology infrastructure and the roles that govern this area."
+What is pentesting in your own words?,"Pentesting is a type of testing that companies use to 
+identify and prevent any security threats. Through several methods, 
+this helps organizations proactively manage risks in their systems, networks and programs."
+What are the different penetration phases?,"There are five penetration testing phases: 
+reconnaissance, scanning, vulnerability assessment, exploitation, and reporting."
+Reconnaissance,"In this phase, the tester gathers as much information about the target system as they can, 
+including information about the network topology, operating systems and applications, 
+user accounts, and other relevant information. "
+Scanning,"Once all the relevant data has been gathered in the reconnaissance phase, 
+it’s time to move on to scanning. In this penetration testing phase, 
+the tester uses various tools to identify open ports 
+and check network traffic on the target system."
+Vulnerability Assessment,"the tester uses all the data gathered in the reconnaissance and scanning phases
+ to identify potential vulnerabilities and determine whether they can be exploited. "
+Exploitation,"In this penetration testing phase, the penetration tester attempts to access 
+the target system and exploit the identified vulnerabilities, typically by using
+ a tool like Metasploit to simulate real-world attacks."
+Reporting,"Once the exploitation phase is complete, the tester prepares a report documenting 
+the penetration test’s findings. The report generated in this final penetration testing 
+phase can be used to fix any vulnerabilities found in the system
+ and improve the organization’s security posture."
+What are the different encryption types?,"Symmetric and asymmetric encryption are the two main types. 
+Using keys, symmetric encryption means users and information owners 
+can use the same key to encrypt or decrypt information. Assymetric means 
+there's a private and public key to increase data protection for more sensitive information"
+What makes a system vulnerable?,"Systems and programs are most vulnerable if they don't have additional security
+ features like firewalls or advanced encryptions. In my last role, I pentested each 
+new program we required, as they often lacked security features. 
+This helped us identify what security measures we could implement to protect data."
+Explain the OWASP Top 10,"The OWASP Top 10 is a list of the ten most critical web application security risks. 
+These risks are commonly exploited by attackers. They include issues like Injection, 
+Broken Authentication, Cross-Site Scripting (XSS), and more"
+Black Box,Testers have no prior knowledge of the system. Simulates an external attacker.
+White Box,Testers have full knowledge of the system's internals. Simulates an insider threat.
+Grey Box,"Testers have partial knowledge, often provided by the client. Simulates a compromised insider."
+Explain the CIA triad ,"The CIA Triad stands for Confidentiality, Integrity, and Availability"
+Confidentiality,Ensuring that data is only accessible to authorized individuals.
+Integrity, Ensuring that data is accurate and hasn't been tampered with.
+Availability,Ensuring that data and systems are available when needed
+Security Engineer,Focuses on designing and implementing security systems
+Security Analyst:,"Analyzes security data, investigates incidents, and monitors for threats."
+Security Architect,Designs the overall security structure and strategy of an organization.
+What is CVSS?,"Common Vulnerability Scoring System (CVSS) 
+is a framework for rating the severity of security vulnerabilities."
+CVE,(Common Vulnerabilities and Exposures): Identifies and lists specific security vulnerabilities.
+CWE,Identifies types of software weaknesses that can lead to vulnerabilities.
+Pentest Methodology/Standard,"The choice of methodology/standard depends on the specific project and client requirements.
+ OWASP, OSSTMM, NIST, and ISSAF are all recognized frameworks."
+Attack Vector,The means or path through which an attacker can exploit a vulnerability.
+Attack Surface,The sum of all possible attack vectors in a system.
+Injection,"This vulnerability occurs when untrusted data is sent to an interpreter
+ as part of a command or query. Common types include SQL injection
+ and Cross-Site Scripting (XSS). Attackers can manipulate input 
+to execute malicious commands or scripts."
+Broken Authentication,"Weak authentication mechanisms, such as using default credentials 
+or not implementing proper session management, can lead to unauthorized access. 
+Attackers may exploit these weaknesses to gain unauthorized access to user accounts."
+Sensitive Data Exposure,"When sensitive information like passwords or credit card numbers is not adequately protected,
+ it can be exposed to attackers. This can happen through insecure storage, 
+insufficient encryption, or other means."
+XML External Entity (XXE),"XXE occurs when an application processes XML input without properly validating 
+and protecting against external entity references. Attackers can use this to read local files,
+ perform remote code execution, or launch Denial of Service (DoS) attacks."
+Cross-Site Scripting (XSS),"XSS vulnerabilities occur when an application includes untrusted data
+ in web pages without proper validation. This can allow attackers 
+to inject malicious scripts that execute in the victim's browser."
+Stored XSS,"The malicious script is permanently stored on the target server and served to users when 
+they access a particular web page.
+Example: Attacker posts a malicious script in a forum comment, 
+and all visitors who view that comment are exposed to the script."
+Reflected XSS,"The malicious script is embedded in a URL, email, or other input, 
+and it's reflected off a web server to a user's browser.
+Example: Attacker sends a phishing email containing a link with a malicious script. 
+When the victim clicks the link, the script is executed in their browser."
+DOM-Based XSS,"The attack occurs entirely on the client-side, with the malicious script manipulating the Document 
+Object Model (DOM) of a web page.
+Example: JavaScript on a web page reads a user's input and injects it into 
+the DOM without proper validation, allowing for script execution."
+Blind XSS (Second-Order XSS),"The payload is injected into a web application but not immediately executed.
+ Instead, it's stored and executed when a different user interacts with the application.
+Example: Attacker injects a script that is stored in a database. 
+When an admin logs in and views a particular page, the script is executed in their session."
+Classic SQL Injection," Attackers insert malicious SQL queries into user input fields, 
+often to extract or manipulate database data.
+Example: A login form doesn't properly validate input, 
+and an attacker enters ' OR '1'='1 as the username and password to bypass authentication."
+Blind SQL Injection," Similar to classic SQL injection but without visible error messages. 
+Attackers infer information by crafting queries that produce different responses.
+Example: Attacker sends requests 
+that ask true/false questions to the database to deduce sensitive information."
+Time-Based Blind SQL Injection,"This is a variation of blind SQL injection where attackers delay
+ the server's response to infer information.
+Example: Attacker injects a query that causes a delay, 
+and if the server's response time changes, they can infer whether a condition is true or false."
+Out-of-Band SQL Injection,"Attackers retrieve data through an alternate channel 
+(e.g., DNS requests or HTTP requests) rather than receiving 
+the data in the web application's response.
+Example: Malicious SQL queries trigger
+ DNS requests that the attacker monitors to obtain extracted data."
+Second-Order SQL Injection," Similar to blind SQL injection, but the payload isn't immediately executed.
+ It's stored and executed later, potentially affecting a different user.
+Example: Attacker injects SQL code that's stored in a database. 
+When another user accesses the compromised data, the payload executes."
+CVE-2017-0144,"also known as EternalBlue, is a critical remote code execution vulnerability 
+in Microsoft Windows' Server Message Block (SMB) protocol. 
+It was famously used in the WannaCry ransomware attack in 2017."
+CVE-2014-0160 ,"Heartbleed, is a severe security vulnerability in the OpenSSL cryptography library. 
+It allows attackers to read sensitive data from the memory of a web server or client, 
+including private keys."
+CVE-2016-5195," Dirty COW (Copy-On-Write), is a privilege escalation vulnerability in the Linux kernel. 
+It's called ""dirty"" because it can be exploited by modifying read-only memory."
+CVE-2021-44228," Log4Shell, is a critical vulnerability in the Apache Log4j 2 library, 
+a widely used logging utility in Java applications. It allows remote code execution."
+CVE-2021-26855,"ProxyLogon is a vulnerability affecting Microsoft Exchange 2013, 2016, and 2019. 
+It allows an adversary to bypass authentication and thus impersonate an administrator"
+CVE-2020-1472,"critical Windows vulnerability allowing attackers on the 
+same network to take control of a domain controller,"
+OSSTMM,"Open Source Security Testing Methodology Manual. 
+This methodology focuses on measuring the security of a system. 
+It  covers areas like information security, process security, and internet  security. 
+It's more quantitative and aims to provide a comprehensive  assessment of security."
+OWASP,"(Open Web Application Security Project): OWASP provides  a framework 
+for testing web applications and services. It's known for  its ""Top Ten"" list of the most critical 
+web application security risks,  which is regularly updated to reflect current threats."
+NIST,"(National Institute of Standards and Technology): NIST  has published guidelines for conducting 
+penetration testing. It  emphasizes the importance of defining the scope, objectives, 
+and rules  of engagement for a penetration test."
+PTES,"(Penetration Testing Execution Standard): PTES is a  comprehensive standard that defines
+ a holistic approach to penetration  testing. It covers everything from scoping and intelligence 
+gathering to  the final reporting phase."
+CIS,"(Center for Internet Security): CIS provides guidelines  for conducting security assessments, 
+which can include penetration  testing. Their focus is on best practices 
+for securing systems and  networks."
+ISSAF,"(Information Systems Security Assessment Framework):  
+ISSAF is a framework that helps assess the security of information  systems. 
+It includes various methodologies and tools for conducting  penetration tests."
