@@ -139,3 +139,7 @@ for securing systems and  networks."
 ISSAF,"(Information Systems Security Assessment Framework):  
 ISSAF is a framework that helps assess the security of information  systems. 
 It includes various methodologies and tools for conducting  penetration tests."
+What does bloodhound?,"BloodHound helps you visualize how attackers could move through an AD network 
+if they were able to compromise certain user accounts or systems. 
+It maps out the relationships and permissions between users, groups, and computers within the AD domain. 
+By doing this, it can reveal vulnerabilities, misconfigurations, or weak points in the network's security."
