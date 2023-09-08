@@ -14,7 +14,8 @@ Feel free to download and use this Anki deck for your own study and interview pr
 
 1. Download the Anki deck from [this link](https://ankiweb.net/shared/info/2114580232?cb=1694109492290).
 2. Import it into your Anki application.
-3. If you prefer working with CSV files, you can use the [questions_and_answers.csv](ankisecurity.csv) file for reference or import it into your preferred study tool.
+3. If you want to contribute or customize the questions and answers, use the [questions_and_answers.csv](ankisecurity.csv) file to make your changes.
+
 
 ## Contribution
 
