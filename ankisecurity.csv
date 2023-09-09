@@ -143,3 +143,8 @@ What does bloodhound?,"BloodHound helps you visualize how attackers could move t
 if they were able to compromise certain user accounts or systems. 
 It maps out the relationships and permissions between users, groups, and computers within the AD domain. 
 By doing this, it can reveal vulnerabilities, misconfigurations, or weak points in the network's security."
+Explain SCF File Attacks,"In an SCF file attack, the attacker creates a specially crafted SCF file that 
+takes advantage of the way Windows handles these shortcut files. When the victim opens or even previews the SCF file, 
+Windows automatically attempts to load icon resource information from it. 
+This automatic behavior can be exploited by attackers to gather sensitive 
+information like NTLMv2 hashes when the victim accesses the malicious SCF file over an SMB (Server Message Block) share"
