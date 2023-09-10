@@ -16,9 +16,4 @@ Feel free to download and use this Anki deck for your own study and interview pr
 2. Import it into your Anki application.
 3. If you want to contribute or customize the questions and answers, use the [questions_and_answers.csv](ankisecurity.csv) file to make your changes.
 
-
-## Contribution
-
-If you'd like to contribute to this project by adding more questions or making improvements, please feel free to fork this repository and submit a pull request. Your contributions are highly appreciated.
-
 Happy studying and best of luck with your cybersecurity endeavors!
