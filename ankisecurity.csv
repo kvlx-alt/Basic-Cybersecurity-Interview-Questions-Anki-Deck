@@ -148,3 +148,9 @@ takes advantage of the way Windows handles these shortcut files. When the victim
 Windows automatically attempts to load icon resource information from it. 
 This automatic behavior can be exploited by attackers to gather sensitive 
 information like NTLMv2 hashes when the victim accesses the malicious SCF file over an SMB (Server Message Block) share"
+CSRF,"CSRF, or Cross-Site Request Forgery, is an attack where an attacker tricks a user into unintentionally performing actions 
+on a website without their knowledge or consent. This is typically done by getting the user to click on a malicious link or visit 
+a website that contains malicious code. For example, let's say you're logged into your online banking account in one browser tab 
+and you visit another website in a different tab. If the second website has malicious code, it could secretly send requests to 
+your banking account in the background without you knowing. These requests might include transferring money or changing your password, 
+all without your consent."
