@@ -3,9 +3,7 @@ Could you describe information security?,"Information security is how companies 
 their systems and information from threats. 
 It can include the processes an organization follows 
 to ensure security, the technology infrastructure and the roles that govern this area."
-What is pentesting in your own words?,"Pentesting is a type of testing that companies use to 
-identify and prevent any security threats. Through several methods, 
-this helps organizations proactively manage risks in their systems, networks and programs."
+What is pentesting in your own words?,"Pentesting, or penetration testing, is a simulated cyberattack on a computer system, network, or web application to identify security vulnerabilities. Pentesting is performed by ethical hackers, who use the same tools and techniques as malicious attackers, but with the permission of the target organization."
 What are the different penetration phases?,"There are five penetration testing phases: 
 reconnaissance, scanning, vulnerability assessment, exploitation, and reporting."
 Reconnaissance,"In this phase, the tester gathers as much information about the target system as they can, 
