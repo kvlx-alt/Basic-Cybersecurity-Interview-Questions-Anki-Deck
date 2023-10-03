@@ -79,10 +79,6 @@ DOM-Based XSS,"The attack occurs entirely on the client-side, with the malicious
 Object Model (DOM) of a web page.
 Example: JavaScript on a web page reads a user's input and injects it into 
 the DOM without proper validation, allowing for script execution."
-Blind XSS (Second-Order XSS),"The payload is injected into a web application but not immediately executed.
- Instead, it's stored and executed when a different user interacts with the application.
-Example: Attacker injects a script that is stored in a database. 
-When an admin logs in and views a particular page, the script is executed in their session."
 Classic SQL Injection," Attackers insert malicious SQL queries into user input fields, 
 often to extract or manipulate database data.
 Example: A login form doesn't properly validate input, 
