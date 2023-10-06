@@ -148,3 +148,5 @@ a website that contains malicious code. For example, let's say you're logged int
 and you visit another website in a different tab. If the second website has malicious code, it could secretly send requests to 
 your banking account in the background without you knowing. These requests might include transferring money or changing your password, 
 all without your consent."
+Vertical privilege escalation,"If a user can gain access to functionality that they are not permitted to access then this is vertical privilege escalation. For example, if a non-administrative user can gain access to an admin page where they can delete user accounts, then this is vertical privilege escalation."
+Horizontal privilege escalation,"Horizontal privilege escalation occurs if a user is able to gain access to resources belonging to another user, instead of their own resources of that type. For example, if an employee can access the records of other employees as well as their own, then this is horizontal privilege escalation."
